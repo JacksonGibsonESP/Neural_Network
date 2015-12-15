@@ -40,8 +40,8 @@ public class Brain {
     public void clearTrainingSet(){
         trainingSet.clear();
     }
-    public void addRowToTrainingSet(double[] inputVector, double[] outVector){
-        trainingSet.addRow (new DataSetRow(inputVector, outVector));
+    public void addRowToTrainingSet(double[] inputVector, double[] outputVector){
+        trainingSet.addRow (new DataSetRow(inputVector, outputVector));
     }
     public void learn(){
         neuralNetwork.learn(trainingSet);
