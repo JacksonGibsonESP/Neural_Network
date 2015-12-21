@@ -55,7 +55,7 @@ public class Brain {
     public double[] getOutput(){
         return neuralNetwork.getOutput();
     }
-    public void saveNNToFile(){
-        neuralNetwork.save("neural_network.nnet");
+    public void saveNNToFile(String fileName){
+        neuralNetwork.save(fileName + ".nnet");
     }
 }

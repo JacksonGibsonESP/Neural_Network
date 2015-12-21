@@ -16,7 +16,7 @@ public class Main {
         brain.addRowToTrainingSet(new double[]{0, 0, 0, 0, 0, 0, 0, 0, 1}, new double[]{0, 1, 1, 0});
 
         brain.learn();
-
+        brain.saveNNToFile("neural_network");
         brain.setInput(new double[]{1, 1, 0, 1, 0, 0, 0, 0, 0});
         brain.think();
         double[] brainOutput = brain.getOutput();
